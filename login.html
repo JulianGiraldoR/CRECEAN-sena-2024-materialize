@@ -21,138 +21,64 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
 
-    <!-- Dropdown Structure CRECEAAN-->
-    <ul id="dropdown1" class="dropdown-content">
-      <li>
-        <a href="/login.html">
-          <i class="material-icons">account_circle</i>Login</a
-        >
-      </li>
-      <li><a href="/crecean.html">Quienes Somos</a></li>
-    </ul>
-
-    <!-- Dropdown Structure inst educativa-->
-    <ul id="dropdown2" class="dropdown-content">
-      <li><a href="/about.html">Quienes Somos</a></li>
-      <li><a href="/PEI.HTML">PEI</a></li>
-      <li><a href="/manual.html">Manual de Convivencia</a></li>
-      <li><a href="/orientacion.html">Desde La Orientación</a></li>
-      <li><a href="/evaluacion.html">Sistema Inst. de Evaluación</a></li>
-      <li><a href="/simbolos.html">Símbolos Institucionales</a></li>
-      <li><a href="/autoevaluacion.html">Autoevaluación Institucional</a></li>
-    </ul>
     <nav>
       <div class="nav-wrapper white">
         <div class="container">
-          <a href="index.html" class="brand-logo"
+          <a href="/index.html" class="brand-logo"
             ><img
               src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
               alt="logo_colegio"
               style="padding: 5px; width: 60px; cursor: pointer"
           /></a>
           <ul class="right hide-on-med-and-down">
-            <li><a style="color: black" href="/index.html">HOME</a></li>
-
-            <!-- Dropdown Trigger -->
             <li>
-              <a
-                style="color: black"
-                class="dropdown-trigger"
-                href="#!"
-                data-target="dropdown2"
-                >INST. EDUCATIVA<i class="material-icons right"></i
-              ></a>
-            </li>
-
-            <li><a style="color: black" href="/contact.html">CONTACTO</a></li>
-            <!-- Dropdown Trigger -->
-            <li>
-              <a
-                style="color: black"
-                class="dropdown-trigger"
-                href="#!"
-                data-target="dropdown1"
-                >INGRESO CRECEAN<i class="material-icons right"></i
-              ></a>
+              <a style="color: black" href="/crecean.html">INICIO CRECEAN</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="section container">
-      <div class="caption center-align black-text">
-        <h2>Formulario de Contacto</h2>
-        <h5 class="light text-lighten-3 black-text">
-          Escribenos tus dudas o intereses..
-        </h5>
-      </div>
-    </div>
-    <div class="section container">
+    <div class="container" style="display: flex">
       <div class="row">
-        <form class="col s12 center-align">
-          <div class="row">
-            <div class="input-field col s6">
-              <input
-                placeholder="Placeholder"
-                id="first_name"
-                type="text"
-                class="validate"
-              />
-              <label for="first_name">Nombre</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate" />
-              <label for="last_name">Apellido</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s6">
-              <input id="email" type="email" class="validate" />
-              <label for="email">Email</label>
-            </div>
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="thelephone" type="tel" class="validate" />
-                <label for="tel">Celular</label>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s6">
-              <input id="ciudad" type="text" class="validate" />
-              <label for="ciudad">Ciudad</label>
-            </div>
-          </div>
-
-          <div class="row">
+        <h2 class="center-align">Login</h2>
+        <div class="row">
+          <form class="col s12">
             <div class="row">
               <div class="input-field col s12">
-                <textarea
-                  id="textarea1"
-                  class="materialize-textarea"
-                ></textarea>
-                <label for="textarea1">Escribenos:</label>
+                <input id="email" type="email" class="validate" />
+                <label for="email">Email</label>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="pass" type="password" class="validate" />
+                <label for="pass">Contraseña</label>
+              </div>
+            </div>
 
-          <button
-            class="btn waves-effect blue-grey darken-1"
-            type="submit"
-            name="action"
-          >
-            Enviar Formulario
-            <i class="material-icons right">send</i>
-          </button>
-        </form>
+            <div class="row">
+              <div class="col m12">
+                <p class="right-align">
+                  <button
+                    class="btn btn-large waves-effect blue-grey darken-1"
+                    type="button"
+                    name="action"
+                  >
+                    Login
+                  </button>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-
     <!-- section Footer-->
     <footer class="page-footer red darken-4">
       <div class="container">
