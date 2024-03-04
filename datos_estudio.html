@@ -28,23 +28,13 @@
     <!-- Dropdown Structure CRECEAAN-->
     <ul id="dropdown1" class="dropdown-content">
       <li>
-        <a href="/login.html">
-          <i class="material-icons">account_circle</i>Login</a
-        >
+        <a href="/datos_personales.html">Registro</a>
+        <a href="/login.html">Login</a>
+        <a href="/crecean.html">Quienes Somos</a>
       </li>
-      <li><a href="/crecean.html">Quienes Somos</a></li>
     </ul>
 
     <!-- Dropdown Structure inst educativa-->
-    <ul id="dropdown2" class="dropdown-content">
-      <li><a href="/about.html">Quienes Somos</a></li>
-      <li><a href="/PEI.HTML">PEI</a></li>
-      <li><a href="/manual.html">Manual de Convivencia</a></li>
-      <li><a href="/orientacion.html">Desde La Orientación</a></li>
-      <li><a href="/evaluacion.html">Sistema Inst. de Evaluación</a></li>
-      <li><a href="/simbolos.html">Símbolos Institucionales</a></li>
-      <li><a href="/autoevaluacion.html">Autoevaluación Institucional</a></li>
-    </ul>
     <nav>
       <div class="nav-wrapper white">
         <div class="container">
@@ -55,21 +45,11 @@
               style="padding: 5px; width: 60px; cursor: pointer"
           /></a>
           <ul class="right hide-on-med-and-down">
-            <li><a style="color: black" href="/index.html"><i class="material-icons">home</i></a></li>
-
-            <!-- Dropdown Trigger -->
             <li>
-              <a
-                style="color: black"
-                class="dropdown-trigger"
-                href="#!"
-                data-target="dropdown2"
-                >INST. EDUCATIVA<i class="material-icons right"></i
-              ></a>
+              <a style="color: black" href="/crecean.html"
+                ><i class="material-icons">home</i></a
+              >
             </li>
-
-            <li><a style="color: black" href="/contact.html">CONTACTO</a></li>
-            <!-- Dropdown Trigger -->
             <li>
               <a
                 style="color: black"
@@ -108,10 +88,46 @@
               <label for="inst.educativa">Institucion Educativa</label>
             </div>  
           </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input
+                id="Ciudad"
+                type="text"
+                class="validate"
+              />
+              <label for="Ciudad">Ciudad</label>
+            </div>  
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Tipo de Institucion</option>
+                <option value="1">Publico</option>
+                <option value="2">Privado</option>
+                <option value="3">N/A</option>
+                <
+              </select>
+            </div>
+          </div>
+
             <div class="row">
               <div class="input-field col s12">
-                <input id="grado" type="text" class="validate" />
-                <label for="grado">Grado</label>
+                <select>
+                  <option value="" disabled selected>Selecciona tu Grado</option>
+                  <option value="1">Primero</option>
+                  <option value="2">Segundo</option>
+                  <option value="3">Tercero</option>
+                  <option value="4">Cuarto</option>
+                  <option value="5">Quinto</option>
+                  <option value="6">Sexto</option>
+                  <option value="7">Septimo</option>
+                  <option value="8">Octavo</option>
+                  <option value="9">Noveno</option>
+                  <option value="10">Decimo</option>
+                  <option value="11">Once</option>
+                </select>
               </div>
             </div>
            
@@ -184,7 +200,7 @@
   <li class="waves-effect"><a href="datos_personales.html">1</a></li>
   <li class="waves-effect"><a href="datos_correo.html">2</a></li>
   <li class="waves-effect"><a href="datos_estudio.html">3</a></li>
-  <li class="waves-effect"><a href="datos_correo.html"><i class="material-icons">chevron_right</i></a></li>
+  <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
 </ul>
 </div> 
           

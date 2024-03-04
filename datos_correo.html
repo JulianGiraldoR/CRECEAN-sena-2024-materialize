@@ -24,68 +24,44 @@
   </head>
 
   <body>
-    <!-- Dropdown Structure CRECEAAN-->
-    <ul id="dropdown1" class="dropdown-content">
-      <li>
-        <a href="/login.html">
-          <i class="material-icons">account_circle</i>Login</a
-        >
-      </li>
-      <li><a href="/crecean.html">Quienes Somos</a></li>
-    </ul>
+   <!-- Dropdown Structure CRECEAAN-->
+   <ul id="dropdown1" class="dropdown-content">
+    <li>
+      <a href="/datos_personales.html">Registro</a>
+      <a href="/login.html">Login</a>
+      <a href="/crecean.html">Quienes Somos</a>
+    </li>
+  </ul>
 
-    <!-- Dropdown Structure inst educativa-->
-    <ul id="dropdown2" class="dropdown-content">
-      <li><a href="/about.html">Quienes Somos</a></li>
-      <li><a href="/PEI.HTML">PEI</a></li>
-      <li><a href="/manual.html">Manual de Convivencia</a></li>
-      <li><a href="/orientacion.html">Desde La Orientación</a></li>
-      <li><a href="/evaluacion.html">Sistema Inst. de Evaluación</a></li>
-      <li><a href="/simbolos.html">Símbolos Institucionales</a></li>
-      <li><a href="/autoevaluacion.html">Autoevaluación Institucional</a></li>
-    </ul>
-    <nav>
-      <div class="nav-wrapper white">
-        <div class="container">
-          <a href="index.html" class="brand-logo"
-            ><img
-              src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
-              alt="logo_colegio"
-              style="padding: 5px; width: 60px; cursor: pointer"
-          /></a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a style="color: black" href="/index.html"
-                ><i class="material-icons">home</i></a
-              >
-            </li>
-
-            <!-- Dropdown Trigger -->
-            <li>
-              <a
-                style="color: black"
-                class="dropdown-trigger"
-                href="#!"
-                data-target="dropdown2"
-                >INST. EDUCATIVA<i class="material-icons right"></i
-              ></a>
-            </li>
-
-            <li><a style="color: black" href="/contact.html">CONTACTO</a></li>
-            <!-- Dropdown Trigger -->
-            <li>
-              <a
-                style="color: black"
-                class="dropdown-trigger"
-                href="#!"
-                data-target="dropdown1"
-                >INGRESO CRECEAN<i class="material-icons right"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+  <!-- Dropdown Structure inst educativa-->
+  <nav>
+    <div class="nav-wrapper white">
+      <div class="container">
+        <a href="index.html" class="brand-logo"
+          ><img
+            src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
+            alt="logo_colegio"
+            style="padding: 5px; width: 60px; cursor: pointer"
+        /></a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a style="color: black" href="/crecean.html"
+              ><i class="material-icons">home</i></a
+            >
+          </li>
+          <li>
+            <a
+              style="color: black"
+              class="dropdown-trigger"
+              href="#!"
+              data-target="dropdown1"
+              >INGRESO CRECEAN<i class="material-icons right"></i
+            ></a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <div class="section container">
       <div class="caption center-align black-text">
@@ -119,6 +95,17 @@
             <div class="input-field col s6">
               <input id="password" type="password" class="validate" />
               <label for="password">Confirmar Contraseña</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <select>
+                <option value="" disabled selected>Selecciona un Rol</option>
+                <option value="1">Estudiante</option>
+                <option value="2">Profesor</option>
+                <option value="3">Acudiente</option>
+              </select>
             </div>
           </div>
 

@@ -24,7 +24,16 @@
   </head>
 
   <body>
+      <!-- Dropdown Structure CRECEAAN-->
+      <ul id="dropdown1" class="dropdown-content">
+        <li>
+          <a href="/datos_personales.html">Registro</a>
+          <a href="/login.html">Login</a>
+        
+        </li>
+      </ul>
     <nav>
+
       <div class="nav-wrapper white">
         <div class="container">
           <a href="index.html" class="brand-logo"
@@ -34,16 +43,21 @@
               style="padding: 5px; width: 60px; cursor: pointer"
           /></a>
           <ul class="right hide-on-med-and-down">
-            <li><a style="color: black" href="/index.html">INICIO</a></li>
 
-            <li>
-              <a style="color: black" href="/login.html"
-                ><i class="material-icons">account_circle</i></a
-              >
-            </li>
+
+             <!-- Dropdown Trigger -->
+       <li>
+        <a
+          style="color: black"
+          class="dropdown-trigger"
+          data-target="dropdown1"
+          >ACCESO<i class="material-icons right "></i
+        ></a>
+      </li>
           </ul>
         </div>
       </div>
+      
     </nav>
 
     <!--Section slider -->
@@ -277,7 +291,7 @@
     <!--Section button-->
 
     <div class="row container" style="display: flex; justify-content: center">
-      <a href="/login.html" class="waves-effect blue-grey darken-1 btn-large"
+      <a href="/datos_personales.html" class="waves-effect blue-grey darken-1 btn-large"
         ><i class="material-icons right">arrow_back</i>INGRESO CRECEAN</a
       >
     </div>
