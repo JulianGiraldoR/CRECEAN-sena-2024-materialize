@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+
+  <body>
+
+    <!-- Dropdown Structure CRECEAAN-->
+    <ul id="dropdown1" class="dropdown-content">
+      <li>
+        <a href="/login.html">
+          <i class="material-icons">account_circle</i>Login</a
+        >
+      </li>
+      <li><a href="/crecean.html">Quienes Somos</a></li>
+    </ul>
+
+    <!-- Dropdown Structure inst educativa-->
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="/about.html">Quienes Somos</a></li>
+      <li><a href="/PEI.HTML">PEI</a></li>
+      <li><a href="/manual.html">Manual de Convivencia</a></li>
+      <li><a href="/orientacion.html">Desde La Orientación</a></li>
+      <li><a href="/evaluacion.html">Sistema Inst. de Evaluación</a></li>
+      <li><a href="/simbolos.html">Símbolos Institucionales</a></li>
+      <li><a href="/autoevaluacion.html">Autoevaluación Institucional</a></li>
+    </ul>
+    <nav>
+      <div class="nav-wrapper white">
+        <div class="container">
+          <a href="index.html" class="brand-logo"
+            ><img
+              src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
+              alt="logo_colegio"
+              style="padding: 5px; width: 60px; cursor: pointer"
+          /></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a style="color: black" href="/index.html"><i class="material-icons">home</i></a></li>
+
+            <!-- Dropdown Trigger -->
+            <li>
+              <a
+                style="color: black"
+                class="dropdown-trigger"
+                href="#!"
+                data-target="dropdown2"
+                >INST. EDUCATIVA<i class="material-icons right"></i
+              ></a>
+            </li>
+
+            <li><a style="color: black" href="/contact.html">CONTACTO</a></li>
+            <!-- Dropdown Trigger -->
+            <li>
+              <a
+                style="color: black"
+                class="dropdown-trigger"
+                href="#!"
+                data-target="dropdown1"
+                >INGRESO CRECEAN<i class="material-icons right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="section container">
+      <div class="caption center-align black-text">
+        <h2>Formulario de Registro</h2>
+        <h5 class="light text-lighten-3 black-text">
+          DILIGENCIA TODOS LOS CAMPOS Y HAS PARTE DE NUESTRA COMUNIDAD
+        </h5>
+      </div>
+    </div>
+
+
+    <div class="section container center">
+      <div class="row">
+        <h4>Datos Educacion</h4>
+        <form class="col s12 center-align">
+          <div class="row">
+            <div class="input-field col s12">
+              <input
+                id="inst.educativa"
+                type="text"
+                class="validate"
+              />
+              <label for="inst.educativa">Institucion Educativa</label>
+            </div>  
+          </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="grado" type="text" class="validate" />
+                <label for="grado">Grado</label>
+              </div>
+            </div>
+           
+              <div class="input-field row s12">
+                  <label for="">ELIGE MATERIAS DE TU INTERES</label>
+                  <div class="col"></div>
+                </div>
+
+
+                <div class="input-field col">
+                 <p>
+                    <label>
+                      <input type="checkbox"class="filled-in"  />
+                      <span class="justify-content left">Ingles</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox"class="filled-in"  />
+                      <span class="justify-content left">Literatura</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox"  class="filled-in" />
+                      <span class="justify-content left">Matematicas</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" class="filled-in" />
+                      <span class="justify-content left">Biologia</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" class="filled-in"  />
+                      <span class="justify-content left">Quimica</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" class="filled-in" />
+                      <span class="justify-content left">Fisica</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" class="filled-in" />
+                      <span class="justify-content left">Otro</span>
+                    </label>
+                  </p>
+                 
+                 
+                 
+
+        
+                  
+             
+                </div>
+                
+            </div>
+         
+         
+
+<!--  Structure pagination-->
+<div class="center">
+<ul class="pagination">
+  <li class="disabled"><a href="datos_correo.html"><i class="material-icons">chevron_left</i></a></li>
+  <li class="waves-effect"><a href="datos_personales.html">1</a></li>
+  <li class="waves-effect"><a href="datos_correo.html">2</a></li>
+  <li class="waves-effect"><a href="datos_estudio.html">3</a></li>
+  <li class="waves-effect"><a href="datos_correo.html"><i class="material-icons">chevron_right</i></a></li>
+</ul>
+</div> 
+          
+        </form>
+        <button
+            class="btn waves-effect blue-grey darken-1"
+            type="submit"
+            name="action"
+          >
+            Enviar Formulario
+            <i class="material-icons right">send</i>
+          </button>
+      </div>
+   
+
+  
+    <!-- section Footer-->
+    <footer class="page-footer red darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Institucion educativa CASD</h5>
+            <a href="index.html" class="brand-logo"
+              ><img
+                src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
+                alt="logo_colegio"
+                style="padding: 5px; width: 60px; cursor: pointer"
+            /></a>
+            <p class="grey-text text-lighten-4">
+              Conoce toda Nuestra oferta educativa
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links de interes</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="about.html"
+                  >Institucion Educativa</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="contact.html"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="crecean.html"
+                  >CRECEAN</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright red darken-3">
+        <div class="container black-text">
+          © 2024 desarrollado por Julian Giraldo
+        </div>
+      </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        M.AutoInit();
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".slider");
+        var instances = M.Slider.init(elems, {
+          indicators: true,
+          height: 600,
+          interval: 6500,
+        });
+      });
+    </script>
+  </body>
+</html>
