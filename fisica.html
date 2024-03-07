@@ -24,66 +24,93 @@
   </head>
 
   <body>
+ <!-- Dropdown Structure lateral mobile-->
+<ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <a href="#user"
+          ><img
+            class="circle"
+            src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
+        /></a>
+        <a href="#name"><span class="black-text name">User</span></a>
+        <a href="#email"
+          ><span class="black-text email">User@Correo.com</span></a
+        >
+      </div>
+    </li>
+    <li><a style="color: black" href="/dashboard.html">HOME</a></li>
+    <li>
+      <a style="color: black" href="/datos_personales.html"class="dropdown-trigger" data-target="seguridad">SETTINGS</a>
+    </li>
+    <li><a style="color: black" href="/login.html">LOG OUT</a></li>
+    <li><a style="color: black" href="" class="dropdown-trigger" data-target="materias" >Materia Didactico</a></li>
+    <li><a style="color: black" href="" class="dropdown-trigger" data-target="icfes" >icfes</a></li>
+    <li><a style="color: black" href="" class="dropdown-trigger" data-target="repositorios" >Repositorios</a></li>
+    <li><a style="color: black" href="" >Tutoriales</a></li>
     
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>  
     <!-- Dropdown Structure seguridad-->
     <ul id="seguridad" class="dropdown-content">
+      <li>
+        <a href="">Actualizar datos</a>
+        <a href="">Cambio de Contraseña</a>
+      </li>
+    </ul>
+      <!-- Dropdown Structure materias-->
+      <ul id="materias" class="dropdown-content">
         <li>
-          <a href="">Actualizar datos</a>
-          <a href="">Cambio de Contraseña</a>
+          <a href="matematicas.html">Matematicas</a>
+          <a href="">Español</a>
+          <a href="">Ingles</a>
+          <a href="">Biologia</a>
+          <a href="quimica.html">Quimica</a>
+          <a href="fisica.html">Fisica</a>
         </li>
       </ul>
-        <!-- Dropdown Structure materias-->
-        <ul id="materias" class="dropdown-content">
-          <li>
-            <a href="matematicas.html">Matematicas</a>
-            <a href="">Español</a>
-            <a href="">Ingles</a>
-            <a href="">Biologia</a>
-            <a href="quimica.html">Quimica</a>
-            <a href="fisica.html">Fisica</a>
-          </li>
-        </ul>
-         <!-- Dropdown Structure icfes-->
-      <ul id="icfes" class="dropdown-content">
-          <li>
-            <a href="">Simulacros</a>
-            <a href="">Pruebas</a>
-          </li>
-        </ul>
-           <!-- Dropdown Structure icfes-->
-      <ul id="repositorios" class="dropdown-content">
-          <li>
-            <a href="">Libros</a>
-            <a href="">PDF</a>
-          </li>
-        </ul>
-     <!-- menu navegacion-->
-      <nav>
-        <div class="nav-wrapper white">
-         
-            <a href="index.html" class="brand-logo" 
-              ><img
-                src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
-                alt="logo_colegio"
-                style="padding: 5px; width: 60px; cursor: pointer"
-            /></a>
-            
-            <ul class="right hide-on-med-and-down">
-             
-                <li><a href="/dashboard.html" style="color: black"><i class="material-icons right">home</i></a></li>
-              <li><a style="color: black" class="dropdown-trigger" data-target="materias">Material Didactico<i class="material-icons right"></i></a></li>
-              <li><a style="color: black" class="dropdown-trigger" data-target="icfes">Icfes<i class="material-icons right"></i></a></li>
-              <li><a style="color: black" class="dropdown-trigger" data-target="repositorios">Repositorios<i class="material-icons right"></i></a></li>
-              <li><a style="color: black">Turoriales<i class="material-icons right"></i></a></li>
-              <li><a style="color: black" class="dropdown-trigger" data-target="seguridad"><i class="material-icons right">settings</i></a></li>
-              <li><a href="/crecean.html" style="color: black" class="dropdown-trigger"><i class="material-icons right">logout</i></a></li>
-  
-                 
-            </ul>
+       <!-- Dropdown Structure icfes-->
+    <ul id="icfes" class="dropdown-content">
+        <li>
+          <a href="">Simulacros</a>
+          <a href="">Pruebas</a>
+        </li>
+      </ul>
+         <!-- Dropdown Structure repositorios-->
+    <ul id="repositorios" class="dropdown-content">
+        <li>
+          <a href="">Libros</a>
+          <a href="">PDF</a>
+        </li>
+      </ul>
+      
+   <!-- menu navegacion-->
+    <nav>
+      <div class="nav-wrapper white">
+       
+          <a href="index.html" class="brand-logo" 
+            ><img
+              src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
+              alt="logo_colegio"
+              style="padding: 5px; width: 60px; cursor: pointer"
+          /></a>
           
-        </div>
+          <ul class="right hide-on-med-and-down">
+           
+            <li><a href="dashboard.html" style="color: black"><i class="material-icons right">home</i></a></li>
+            <li><a style="color: black" class="dropdown-trigger" data-target="materias">Material Didactico<i class="material-icons right"></i></a></li>
+            <li><a style="color: black" class="dropdown-trigger" data-target="icfes">Icfes<i class="material-icons right"></i></a></li>
+            <li><a style="color: black" class="dropdown-trigger" data-target="repositorios">Repositorios<i class="material-icons right"></i></a></li>
+            <li><a style="color: black">Turoriales<i class="material-icons right"></i></a></li>
+            <li><a style="color: black" class="dropdown-trigger" data-target="seguridad"><i class="material-icons right">settings</i></a></li>
+            <li><a href="login.html" style="color: black"><i class="material-icons right">logout</i></a></li>
+
+               
+          </ul>
         
-      </nav>
+      </div>
+      
+    </nav>
   
   
       <section>
