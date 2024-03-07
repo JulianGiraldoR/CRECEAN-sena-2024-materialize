@@ -130,16 +130,22 @@
                 <a href="/datos_personales.html" class="waves-effect"
                   >No tengo una cuenta..</a
                 >
-                <button
-                  class="btn waves-effect blue-grey darken-1"
-                  type="submit"
-                  name="action"
-                >
-                  Entrar<i class="material-icons right">send</i>
-                </button>
+                <!-- Modal Structure mensaje emergente confirmacion registro-->
+  <a class="waves-effect blue-grey darken-1 btn-large modal-trigger" href="#modal1">Ingreso</a>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>CONFIRMACION DE INGRESO</h4>
+      <p>Usted esta a punto de Ingresar a Crecean</p>
+    </div>
+    <div class="modal-footer">
+      <a href="dashboard.html" class="modal-close waves-effect waves-green btn-flat">Deseo Ingresar</a>
+      <a href="crecean.html" class="modal-close waves-effect waves-green btn-flat">Regresar al Home</a>
+    </div>
+  </div>
                 <a href="/forgot.html" class="waves-effect"
                   >Olvide la Contraseña</a
                 >
+                
               </div>
             </form>
           </div>
@@ -147,6 +153,11 @@
       </div>
     </div>
 
+
+
+
+
+    
     <!-- section Footer-->
     <footer class="page-footer red darken-4">
       <div class="container">
