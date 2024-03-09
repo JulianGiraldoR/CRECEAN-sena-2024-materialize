@@ -24,115 +24,183 @@
   </head>
 
   <body>
-
-<!-- Dropdown Structure lateral mobile-->
-<ul id="slide-out" class="sidenav">
-    <li>
-      <div class="user-view">
-        <a href="#user"
-          ><img
-            class="circle"
-            src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
-        /></a>
-        <a href="#name"><span class="black-text name">User</span></a>
-        <a href="#email"
-          ><span class="black-text email">User@Correo.com</span></a
+    <!-- Dropdown Structure lateral mobile-->
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <a href="#user"
+            ><img
+              class="circle"
+              src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
+          /></a>
+          <a href="#name"><span class="black-text name">User</span></a>
+          <a href="#email"
+            ><span class="black-text email">User@Correo.com</span></a
+          >
+        </div>
+      </li>
+      <li><a style="color: black" href="/dashboard.html">HOME</a></li>
+      <li>
+        <a
+          style="color: black"
+          href="/datos_personales.html"
+          class="dropdown-trigger"
+          data-target="seguridad"
+          >SETTINGS</a
         >
-      </div>
-    </li>
-    <li><a style="color: black" href="/dashboard.html">HOME</a></li>
-    <li>
-      <a style="color: black" href="/datos_personales.html"class="dropdown-trigger" data-target="seguridad">SETTINGS</a>
-    </li>
-    <li><a style="color: black" href="/login.html">LOG OUT</a></li>
-    <li><a style="color: black" href="" class="dropdown-trigger" data-target="materias" >Materia Didactico</a></li>
-    <li><a style="color: black" href="" class="dropdown-trigger" data-target="icfes" >icfes</a></li>
-    <li><a style="color: black" href="" class="dropdown-trigger" data-target="repositorios" >Repositorios</a></li>
-    <li><a style="color: black" href="" >Tutoriales</a></li>
-    
-  </ul>
-  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>  
+      </li>
+      <li><a style="color: black" href="/login.html">LOG OUT</a></li>
+      <li>
+        <a
+          style="color: black"
+          href=""
+          class="dropdown-trigger"
+          data-target="materias"
+          >Materia Didactico</a
+        >
+      </li>
+      <li>
+        <a
+          style="color: black"
+          href=""
+          class="dropdown-trigger"
+          data-target="icfes"
+          >icfes</a
+        >
+      </li>
+      <li>
+        <a
+          style="color: black"
+          href=""
+          class="dropdown-trigger"
+          data-target="repositorios"
+          >Repositorios</a
+        >
+      </li>
+      <li><a style="color: black" href="">Tutoriales</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"
+      ><i class="material-icons">menu</i></a
+    >
     <!-- Dropdown Structure seguridad-->
     <ul id="seguridad" class="dropdown-content">
       <li>
-        <a href="">Actualizar datos</a>
-        <a href="">Cambio de Contraseña</a>
+        <a href="/404.html">Actualizar datos</a>
+        <a href="/404.html">Cambio de Contraseña</a>
       </li>
     </ul>
-      <!-- Dropdown Structure materias-->
-      <ul id="materias" class="dropdown-content">
-        <li>
-          <a href="matematicas.html">Matematicas</a>
-          <a href="">Español</a>
-          <a href="">Ingles</a>
-          <a href="">Biologia</a>
-          <a href="quimica.html">Quimica</a>
-          <a href="fisica.html">Fisica</a>
-        </li>
-      </ul>
-       <!-- Dropdown Structure icfes-->
+    <!-- Dropdown Structure materias-->
+    <ul id="materias" class="dropdown-content">
+      <li>
+        <a href="matematicas.html">Matematicas</a>
+        <a href="/404.html">Español</a>
+        <a href="/404.html">Ingles</a>
+        <a href="/404.html">Biologia</a>
+        <a href="quimica.html">Quimica</a>
+        <a href="fisica.html">Fisica</a>
+      </li>
+    </ul>
+    <!-- Dropdown Structure icfes-->
     <ul id="icfes" class="dropdown-content">
-        <li>
-          <a href="">Simulacros</a>
-          <a href="">Pruebas</a>
-        </li>
-      </ul>
-         <!-- Dropdown Structure repositorios-->
+      <li>
+        <a href="/404.html">Simulacros</a>
+        <a href="/404.html">Pruebas</a>
+      </li>
+    </ul>
+    <!-- Dropdown Structure repositorios-->
     <ul id="repositorios" class="dropdown-content">
-        <li>
-          <a href="">Libros</a>
-          <a href="">PDF</a>
-        </li>
-      </ul>
-      
-   <!-- menu navegacion-->
+      <li>
+        <a href="repositorios.html">Mis Repositorios</a>
+        <a href="Uprepo.html">Subir Repositorio</a>
+      </li>
+    </ul>
+
+    <!-- menu navegacion-->
     <nav>
       <div class="nav-wrapper white">
-       
-          <a href="index.html" class="brand-logo" 
-            ><img
-              src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
-              alt="logo_colegio"
-              style="padding: 5px; width: 60px; cursor: pointer"
-          /></a>
-          
-          <ul class="right hide-on-med-and-down">
-           
-            <li><a href="dashboard.html" style="color: black"><i class="material-icons right">home</i></a></li>
-            <li><a style="color: black" class="dropdown-trigger" data-target="materias">Material Didactico<i class="material-icons right"></i></a></li>
-            <li><a style="color: black" class="dropdown-trigger" data-target="icfes">Icfes<i class="material-icons right"></i></a></li>
-            <li><a style="color: black" class="dropdown-trigger" data-target="repositorios">Repositorios<i class="material-icons right"></i></a></li>
-            <li><a style="color: black">Turoriales<i class="material-icons right"></i></a></li>
-            <li><a style="color: black" class="dropdown-trigger" data-target="seguridad"><i class="material-icons right">settings</i></a></li>
-            <li><a href="login.html" style="color: black"><i class="material-icons right">logout</i></a></li>
+        <a href="index.html" class="brand-logo"
+          ><img
+            src="https://res.cloudinary.com/diav64knu/image/upload/v1708218685/samples/ProyectColegio/imagenes%20casd/logo_64x64_ftmbct.png"
+            alt="logo_colegio"
+            style="padding: 5px; width: 60px; cursor: pointer"
+        /></a>
 
-               
-          </ul>
-        
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="dashboard.html" style="color: black"
+              ><i class="material-icons right">home</i></a
+            >
+          </li>
+          <li>
+            <a
+              style="color: black"
+              class="dropdown-trigger"
+              data-target="materias"
+              >Material Didactico<i class="material-icons right"></i
+            ></a>
+          </li>
+          <li>
+            <a style="color: black" class="dropdown-trigger" data-target="icfes"
+              >Icfes<i class="material-icons right"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              style="color: black"
+              class="dropdown-trigger"
+              data-target="repositorios"
+              >Repositorios<i class="material-icons right"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/404.html" style="color: black"
+              >Turoriales<i class="material-icons right"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              style="color: black"
+              class="dropdown-trigger"
+              data-target="seguridad"
+              ><i class="material-icons right">settings</i></a
+            >
+          </li>
+          <li>
+            <a href="login.html" style="color: black"
+              ><i class="material-icons right">logout</i></a
+            >
+          </li>
+        </ul>
       </div>
-      
     </nav>
 
+    <div class="row">
+      <div class="caption center-align black-text">
+        <h2>Guías pedagógicas en física, química y matemáticas</h2>
+      </div>
+    </div>
 
-    <section>
-        <div class="container">
-            <div class="caption center-align black-text">
-              <h2>Guías pedagógicas en física, química y matemáticas </h2>
-            </div>
-          </div>
-      </section>
-      
-
-<div class="row container">
+    <div class="row container">
       <div class="row">
         <div class="col">
           <div class="card">
             <div class="card-image">
-              <img src="https://res.cloudinary.com/diav64knu/image/upload/v1709781712/samples/ProyectColegio/images/IMAGENES%20CRECEAN/quimica_rxgitg.jpg">
-              <span class="card-title black-text" style="font-weight: bold;">FISICA</span>
+              <img
+                src="https://res.cloudinary.com/diav64knu/image/upload/v1709781712/samples/ProyectColegio/images/IMAGENES%20CRECEAN/quimica_rxgitg.jpg"
+              />
+              <span class="card-title black-text" style="font-weight: bold"
+                >FISICA</span
+              >
             </div>
             <div class="card-content">
-              <p>Las guías pueden ser trabajadas en clase de física, química o matemáticas y en general en cualquier escenario interesado en las ciencias exactas. Se sugiere que antes de abordar los temas exista una explicación breve de las aplicaciones que se requieren para consultarlas, así como de la forma correcta de descargarlas y de utilizarlas</p>
+              <p>
+                Las guías pueden ser trabajadas en clase de física, química o
+                matemáticas y en general en cualquier escenario interesado en
+                las ciencias exactas. Se sugiere que antes de abordar los temas
+                exista una explicación breve de las aplicaciones que se
+                requieren para consultarlas, así como de la forma correcta de
+                descargarlas y de utilizarlas
+              </p>
             </div>
             <div class="card-action">
               <a href="fisica.html">MAS INFORMACION</a>
@@ -145,11 +213,22 @@
         <div class="col">
           <div class="card">
             <div class="card-image">
-              <img src="https://res.cloudinary.com/diav64knu/image/upload/v1709781713/samples/ProyectColegio/images/IMAGENES%20CRECEAN/side-view-girl-learning-chemistry_bsxtzj.jpg">
-              <span class="card-title black-text" style="font-weight: bold;"  >QUIMICA</span>
+              <img
+                src="https://res.cloudinary.com/diav64knu/image/upload/v1709781713/samples/ProyectColegio/images/IMAGENES%20CRECEAN/side-view-girl-learning-chemistry_bsxtzj.jpg"
+              />
+              <span class="card-title black-text" style="font-weight: bold"
+                >QUIMICA</span
+              >
             </div>
             <div class="card-content">
-              <p>Las guías pueden ser trabajadas en clase de física, química o matemáticas y en general en cualquier escenario interesado en las ciencias exactas. Se sugiere que antes de abordar los temas exista una explicación breve de las aplicaciones que se requieren para consultarlas, así como de la forma correcta de descargarlas y de utilizarlas</p>
+              <p>
+                Las guías pueden ser trabajadas en clase de física, química o
+                matemáticas y en general en cualquier escenario interesado en
+                las ciencias exactas. Se sugiere que antes de abordar los temas
+                exista una explicación breve de las aplicaciones que se
+                requieren para consultarlas, así como de la forma correcta de
+                descargarlas y de utilizarlas
+              </p>
             </div>
             <div class="card-action">
               <a href="quimica.html">MAS INFORMACION</a>
@@ -162,11 +241,22 @@
         <div class="col">
           <div class="card">
             <div class="card-image">
-              <img src="https://res.cloudinary.com/diav64knu/image/upload/v1709781044/samples/ProyectColegio/images/IMAGENES%20CRECEAN/matematicas_1_1_chhcc3.jpg">
-              <span class="card-title black-text" style="font-weight: bold;">MATEMATICAS</span>
+              <img
+                src="https://res.cloudinary.com/diav64knu/image/upload/v1709781044/samples/ProyectColegio/images/IMAGENES%20CRECEAN/matematicas_1_1_chhcc3.jpg"
+              />
+              <span class="card-title black-text" style="font-weight: bold"
+                >MATEMATICAS</span
+              >
             </div>
             <div class="card-content">
-              <p>Las guías pueden ser trabajadas en clase de física, química o matemáticas y en general en cualquier escenario interesado en las ciencias exactas. Se sugiere que antes de abordar los temas exista una explicación breve de las aplicaciones que se requieren para consultarlas, así como de la forma correcta de descargarlas y de utilizarlas</p>
+              <p>
+                Las guías pueden ser trabajadas en clase de física, química o
+                matemáticas y en general en cualquier escenario interesado en
+                las ciencias exactas. Se sugiere que antes de abordar los temas
+                exista una explicación breve de las aplicaciones que se
+                requieren para consultarlas, así como de la forma correcta de
+                descargarlas y de utilizarlas
+              </p>
             </div>
             <div class="card-action">
               <a href="matematicas.html">MAS INFORMACION</a>
@@ -174,16 +264,38 @@
           </div>
         </div>
       </div>
-
     </div>
-    
 
-   
+    <div class="row container">
+      <div class="caption center-align black-text">
+        <h2>Repositorios</h2>
+      </div>
+    </div>
 
-   
-   
-
-  
+    <div class="row container">
+      <div class="col">
+        <div class="card">
+          <div class="card-image">
+            <img
+              src="https://res.cloudinary.com/diav64knu/image/upload/v1709947761/samples/ProyectColegio/images/repo_me1ufr.jpg"
+            />
+            <span class="card-title black-text" style="font-weight: bold"
+              >REPOSITORIOS</span
+            >
+          </div>
+          <div class="card-content">
+            <p>
+              En este espacio encontraras todos los repositorios subidos por
+              estudiantes y profesores, accede a todo el contenido de la
+              plataforma.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="repositorios.html">MAS INFORMACION</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- section Footer-->
     <footer class="page-footer red darken-4">
